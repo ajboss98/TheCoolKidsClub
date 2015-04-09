@@ -1,20 +1,29 @@
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class BackEnd {
 
-	private List<String> usernames;
-	private List<String> messages;
+	private File userlist;
 	
 	 public BackEnd(){
-		 usernames = null;
+		userlist = new File("List of Users");
 	 }
 	 
-	 public List<String> getUsernames(){
-		 return usernames;
+	 public List<String> getMessages(String username){
+		 return null;
 	 }
-	 public void addUser(String username){
-		 usernames.add(username);
+	 public void addMessage(String username, String msg){
+		 Encoder temp = new Encoder(username);
+		 
 	 }
+	 public List<String> getUsers()
+	 {		
+		return null;		
+	  }
 	 
 }
