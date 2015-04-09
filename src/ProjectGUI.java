@@ -20,6 +20,8 @@ public class ProjectGUI {
 		
 		Box usernameBox = Box.createVerticalBox();
 		Box searchBox = Box.createVerticalBox();
+		frame.add(searchBox);
+		frame.add(usernameBox);
 		daConvos = new BackEnd();
 		//usernameBox
 		
@@ -28,6 +30,7 @@ public class ProjectGUI {
 		JButton NewMSGB = new JButton("Create Message");
 		JTextField searchField = new JTextField();
 		JButton searchButton = new JButton("Search");
+		searchBox.add(NewMSGB);
 	}
 	public static void main(String[] args)
 	{
