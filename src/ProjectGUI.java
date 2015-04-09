@@ -31,6 +31,8 @@ public class ProjectGUI {
 		JTextField searchField = new JTextField();
 		JButton searchButton = new JButton("Search");
 		searchBox.add(NewMSGB);
+		searchBox.add(searchField);
+		searchBox.add(searchButton);
 	}
 	public static void main(String[] args)
 	{
